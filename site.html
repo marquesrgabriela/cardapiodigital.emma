@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Escolar - EMMA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5b3f6d4f65.js" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <!--cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo" href="site.html" aria-label="Página inicial do Cardápio Escolar">
+                    Cardápio Escolar - Prefeitura Municipal de Ituiutaba
+                </a>
+
+                <!-- Botão do menu em telas menores -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de navegação -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="site.html"> Início </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PNAE.html">PNAE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cardapio.html"> Cardápio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html"> Contato </a>
+                        </li>
+                     </ul>
+
+                    <!-- Área de acesso -->
+                    <div class="d-flex gap-2">
+                        <a href="login.html" class="btn btn-login">
+                            Entrar
+                        </a>
+                        <a href="cadastro.html" class="btn btn-success">
+                            Cadastrar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--Seção Principal-->
+        <section class="hero py-5" aria-labelledby="titulo-principal">
+            <div class="container">
+                <div class="row align-items-center g-5">
+
+                    <!-- Texto principal -->
+                    <div class="col-12 col-lg-6">
+                        <div class="texto">
+                            <h1 id="titulo-principal">
+                                O cardápio da escola
+                                <br>
+                                na palma da sua mão.
+                            </h1>
+
+                            <p>
+                                Acompanhe o cardápio escolar e participe para melhorar cada refeição.
+                            </p>
+
+                            <div class="hero-buttons d-flex flex-wrap gap-3">
+                                <a href="cardapio.html" class="btn verde">
+                                    Ver Cardápio
+                                </a>
+                                <a href="#sugestao" class="btn branco">
+                                    Enviar Sugestão
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem principal -->
+                    <div class="col-12 col-lg-6">
+                        <div class="imagem text-center">
+                            <img src="IMG/prato.png" class="img-fluid" alt="Ilustração de um prato com uma refeição saudável">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Cardápio Semanal -->
+        <section id="semanal" class="cardapio py-5" arialabelledby="titulo-cardapio">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 id="titulo-cardapio">
+                        🍽 Cardápio Semanal
+                    </h2>
+                    <p>
+                        Confira as refeições planejadas para a semana.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="dia h-100">
+                            <h3>Segunda</h3>
+                            <h4>Almoço</h4>
+                            <p>
+                                Galinhada, Feijão, Salada (Alface, Couve e Tomate),Fruta (Melancia).
+                            </p>
+                            <h4>Jantar</h4>
+                            <p>
+                                Arroz, Mini Feijoada, Salada (Couve com Laranja), Farofa de ovos, Fruta (Abacaxi).
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="dia h-100">
+                            <h3>Terça</h3>
+                            <h4>Almoço</h4>
+                            <p>
+                                Macarronada à bolonhesa, Salada (Alface com Cenoura), Fruta (Maçã).
+                            </p>
+                            <h4>Jantar</h4>
+                            <p>
+                                Arroz, Feijão, Strogonoff de carne de frango, Salada (Couve com Beterraba cozida), Fruta (Melão).
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="dia h-100">
+                            <h3>Quarta</h3>
+                            <h4>Almoço</h4>
+                            <p>
+                                Arroz, Feijão, Quibebe de carne suína, Salada (Repolho com abacaxi), Fruta (Banana).
+                            </p>
+                            <h4>Jantar</h4>
+                            <p>
+                                Arroz, Feijão, Molho de carne bovina com batata e cenoura, Vinagrete de tomate com cenoura, Fruta (Laranja).
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="dia h-100">
+                            <h3>Quinta</h3>
+                            <h4>Almoço</h4>
+                            <p>
+                                Arroz, Feijão, Escondidinho de batata doce com frango desfiado, Salada (Alface com tomate), Fruta (Abacaxi).
+                            </p>
+                            <h4>Jantar</h4>
+                            <p>
+                                Arroz, Feijão, Carne suína picadinha, Purê de abóbora cabotiá, Salada (Alface, Couve e tomate), Fruta (Maçã).
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="dia h-100">
+                            <h3>Sexta</h3>
+                            <h4>Almoço</h4>
+                            <p>
+                                Arroz, Feijão, Pernil desfiado com molho de inhame, Vinagrete de tomate com pepino, Fruta (Melão).
+                            </p>
+                            <h4>Jantar</h4>
+                            <p>
+                                Arroz Colorido (cozido com açafrão, carne bovina e cenoura ralada), Feijão, Salada (Repolho com abacaxi), Fruta (Banana).
+                            </p>
+                        </article>
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- Formulário de sugestões -->
+        <section id="sugestao" class="py-5" aria-labelledby="titulo-sugestao">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div class="text-center mb-4">
+                            <h2 id="titulo-sugestao">
+                                Sua opinião faz a diferença!
+                            </h2>
+                            <p>
+                                Compartilhe sua opinião sobre a alimentação escolar.
+                            </p>
+                        </div>
+        
+                        <!-- Mensagem para usuário não logado -->
+                        <div id="mensagemLogin" class="text-center">
+                            <div class="card p-4">
+                                <i class="fa-solid fa-lock mb-3" style="font-size: 40px; color: var(--verde);">
+                                </i>
+                                <h3>
+                                    Para comentar, faça login!
+                                </h3>
+                                <p>
+                                    Entre na sua conta para enviar uma sugestão sobre a alimentação escolar.
+                                 </p>
+                                <a href="login.html" class="btn btn-success">
+                                    Fazer login
+                                </a>
+                            </div>
+                        </div>
+        
+        
+                        <!-- Formulário -->
+                        <form id="formSugestao" class="d-none">
+                            <div class="mb-3">
+                                <label for="perfil" class="form-label">
+                                    Quem é você?
+                                </label>
+                                <select id="perfil" name="perfil" class="form-select" required>
+                                    <option value="" selected disabled>
+                                        Selecione uma opção
+                                    </option>
+                                    <option value="responsavel">
+                                        Responsável pelo aluno
+                                    </option>
+                                    <option value="aluno">
+                                        Aluno
+                                    </option>
+                                    <option value="professor">
+                                        Professor
+                                    </option>
+                                </select>
+                            </div>
+        
+                            <div class="mb-3">
+                                <label for="sugestaoTexto" class="form-label">
+                                Sua sugestão
+                                </label>
+                                <textarea id="sugestaoTexto" name="sugestao" class="form-control" rows="5"
+                                    placeholder="Digite sua sugestão..." required></textarea>
+                            </div>
+        
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success">
+                                    Enviar Sugestão
+                                </button>
+                            </div>
+                        </form>
+        
+        
+                        <!-- Mensagem de sucesso -->
+        
+                        <div id="mensagemSucesso" class="alert alert-success text-center mt-4 d-none" role="alert">
+                            Sua sugestão foi enviada com sucesso!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Rodapé -->
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <h2>
+                Escola Municipal Machado de Assis - Prefeitura de Ituiutaba/MG
+            </h2>
+            <p class="mb-0">
+                © 2026 - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript -->
+    <script src="site.js"></script>
+</body>
+</html>

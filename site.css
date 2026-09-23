@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --verde: #468C5C;
+    --verde-claro: #86947A;
+    --laranja: #EE7A61;
+    --lilás: #A9A4C9;
+    --cinza: #666;
+    --branco: #fff;
+    --rosa: #942F67;
+    --amarelo: #F2C36B;
+}
+
+/* Body */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--verde-claro);
+    color: var(--rosa);
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background: var(--rosa);
+    padding: 18px 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+}
+
+.logo h2 {
+    color: var(--verde);
+    font-weight: 700;
+    margin: 0;
+}
+
+.logo span {
+    color: var(--laranja);
+}
+
+
+/* Navbar */
+
+.navbar {
+    background: var(--rosa);
+}
+
+.navbar .nav-link {
+    color: var(--branco);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.navbar-toggler {
+    border: 2px solid var(--verde);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 .2rem rgba(70, 140, 92, .25);
+}
+
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23468C5C' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Botões */
+
+.btn-login {
+    background: var(--branco);
+    color: var(--verde);
+    border: 2px solid var(--verde);
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-cadastro {
+    background: var(--laranja);
+    color: var(--branco);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-login:hover,
+.btn-cadastro:hover {
+    transform: translateY(-2px);
+}
+
+/* Hero */
+.hero {
+    margin-top: 100px;
+    padding: 70px 8%;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    color: var(--rosa);
+}
+
+.hero p {
+    margin: 25px 0;
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.verde {
+    background: var(--verde);
+    color: var(--branco);
+    border: none;
+    padding: 16px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.branco {
+    background: var(--branco);
+    color: var(--verde);
+    border: 2px solid var(--verde);
+    padding: 16px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.verde:hover,
+.branco:hover {
+    transform: translateY(-2px);
+}
+
+/* Imagem */
+
+.imagem {
+    text-align: center;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    animation: flutuar 4s infinite ease-in-out;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Vantagens */
+
+.vantagens {
+    padding: 50px 8%;
+}
+
+.card {
+    background: var(--branco);
+    border: none;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: .4s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 40px;
+    color: var(--verde);
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: var(--rosa);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--cinza);
+}
+
+
+/* Cardápio */
+.cardapio {
+    padding: 80px 8%;
+}
+
+.cardapio h2 {
+    text-align: center;
+    color: var(--rosa);
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.dias {
+    padding: 0;
+}
+
+.dia {
+    background: var(--branco);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
+    transition: .3s;
+    height: 100%;
+}
+
+.dia:hover {
+    transform: scale(1.03);
+}
+
+.dia h3 {
+    color: var(--verde);
+    margin-bottom: 15px;
+}
+
+.dia h4 {
+    color: var(--laranja);
+    margin-top: 15px;
+}
+
+.dia p {
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+/* Formulário */
+#sugestao {
+    padding: 80px 8%;
+}
+
+#sugestao h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--rosa);
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #ddd !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--verde) !important;
+    box-shadow: 0 0 0 .2rem rgba(70, 140, 92, .15) !important;
+}
+
+textarea {
+    height: 180px;
+    resize: none;
+}
+
+form button {
+    background: var(--laranja);
+    color: var(--branco);
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+form button:hover {
+    background: var(--rosa);
+}
+
+/* Formulário */
+
+.form-label {
+    color: var(--rosa);
+    font-weight: 500;
+}
+
+.form-control,
+.form-select {
+    padding: 12px 16px;
+}
+
+/* Footer */
+
+footer {
+    background: var(--rosa);
+    color: var(--branco);
+    text-align: center;
+    padding: 40px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    .hero {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+}
+
+/* Celular */
+
+@media (max-width: 700px) {
+    .hero {
+        margin-top: 70px;
+        padding: 50px 6%;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardapio {
+        padding: 60px 6%;
+    }
+
+    .cardapio h2 {
+        font-size: 30px;
+    }
+
+    #sugestao {
+        padding: 60px 6%;
+    }
+
+    footer {
+        padding: 30px 15px;
+    }
+
+}

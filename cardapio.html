@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápios - Cardápio Escolar</title>
+
+
+    <!-- Bootstrap 5 -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap Icons -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS do projeto -->
+
+    <link
+        rel="stylesheet"
+        href="site.css">
+
+</head>
+
+
+<body class="bg-light">
+
+
+    <!-- =====================================
+         CABEÇALHO
+    ====================================== -->
+
+    <header class="bg-white shadow-sm py-3">
+
+        <div class="container">
+
+            <div
+                class="d-flex justify-content-between align-items-center">
+
+
+                <!-- LOGO -->
+
+                <a
+                    href="index.html"
+                    class="text-decoration-none">
+
+                    <h2
+                        class="m-0"
+                        style="
+                        color:#468C5C;
+                        font-weight:700;
+                        ">
+
+                        Cardápio Escolar
+
+                    </h2>
+
+                </a>
+
+
+                <!-- VOLTAR -->
+
+                <a
+                    href="index.html"
+                    class="btn btn-outline-success">
+
+                    <i class="bi bi-house"></i>
+
+                    Início
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         CONTEÚDO
+    ====================================== -->
+
+    <main>
+
+
+        <!-- TÍTULO -->
+
+        <section class="py-5">
+
+            <div class="container">
+
+                <div class="text-center">
+
+
+                    <span
+                        class="text-success fw-semibold">
+
+                        CONSULTA
+
+                    </span>
+
+
+                    <h1
+                        class="display-5 fw-bold mt-2">
+
+                        Cardápios Escolares
+
+                    </h1>
+
+
+                    <p
+                        class="lead text-muted">
+
+                        Consulte o cardápio da semana ou encontre
+                        cardápios de meses anteriores.
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ABAS
+        ====================================== -->
+
+        <section class="pb-5">
+
+            <div class="container">
+
+
+                <!-- NAV TABS -->
+
+                <ul
+                    class="nav nav-tabs nav-fill mb-4"
+                    id="cardapioTabs"
+                    role="tablist">
+
+
+                    <!-- SEMANA -->
+
+                    <li
+                        class="nav-item"
+                        role="presentation">
+
+                        <button
+                            class="nav-link active"
+                            id="semana-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#semana"
+                            type="button"
+                            role="tab">
+
+                            <i class="bi bi-calendar-week"></i>
+
+                            Cardápio da Semana
+
+                        </button>
+
+                    </li>
+
+
+                    <!-- ANTIGOS -->
+
+                    <li
+                        class="nav-item"
+                        role="presentation">
+
+                        <button
+                            class="nav-link"
+                            id="anteriores-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#anteriores"
+                            type="button"
+                            role="tab">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Cardápios Anteriores
+
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+
+
+                <!-- CONTEÚDO DAS ABAS -->
+
+                <div
+                    class="tab-content"
+                    id="cardapioTabsContent">
+
+
+                    <!-- =================================
+                         CARDÁPIO DA SEMANA
+                    ================================== -->
+
+                    <div
+                        class="tab-pane fade show active"
+                        id="semana"
+                        role="tabpanel">
+
+
+                        <!-- SEMANA ATUAL -->
+
+                        <div
+                            class="card border-0 shadow-sm rounded-4 mb-4">
+
+                            <div
+                                class="card-body p-4">
+
+
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+
+
+                                    <div>
+
+                                        <span
+                                            class="badge bg-success mb-2">
+
+                                            SEMANA ATUAL
+
+                                        </span>
+
+
+                                        <h2 class="h4 fw-bold">
+
+                                            Cardápio da Semana
+
+                                        </h2>
+
+
+                                        <p
+                                            class="text-muted mb-md-0">
+
+                                            Escola Municipal Machado de Assis
+
+                                        </p>
+
+                                    </div>
+
+
+                                    <button
+                                        class="btn btn-outline-success mt-3 mt-md-0">
+
+                                        <i class="bi bi-printer"></i>
+
+                                        Imprimir
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- DIAS -->
+
+                        <div class="row g-4">
+
+
+                            <!-- SEGUNDA -->
+
+                            <div class="col-md-6 col-lg">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+
+                                    <div
+                                        class="card-header bg-success text-white text-center">
+
+                                        <strong>
+
+                                            Segunda-feira
+
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="card-body">
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            ☀ Almoço
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Galinhada, feijão, salada de
+                                            alface, couve e tomate.
+
+                                        </p>
+
+
+                                        <hr>
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            🌙 Jantar
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz, mini feijoada e salada
+                                            de couve com laranja.
+
+                                        </p>
+
+
+                                        <span
+                                            class="badge text-bg-light">
+
+                                            🍉 Melancia
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- TERÇA -->
+
+                            <div class="col-md-6 col-lg">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+
+                                    <div
+                                        class="card-header bg-success text-white text-center">
+
+                                        <strong>
+
+                                            Terça-feira
+
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="card-body">
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            ☀ Almoço
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Macarronada à bolonhesa e
+                                            salada de alface com cenoura.
+
+                                        </p>
+
+
+                                        <hr>
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            🌙 Jantar
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz, feijão, strogonoff
+                                            de frango e salada.
+
+                                        </p>
+
+
+                                        <span
+                                            class="badge text-bg-light">
+
+                                            🍎 Maçã
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- QUARTA -->
+
+                            <div class="col-md-6 col-lg">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+
+                                    <div
+                                        class="card-header bg-success text-white text-center">
+
+                                        <strong>
+
+                                            Quarta-feira
+
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="card-body">
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            ☀ Almoço
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz, feijão, quibebe de
+                                            carne suína e salada.
+
+                                        </p>
+
+
+                                        <hr>
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            🌙 Jantar
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz, feijão, carne bovina
+                                            com batata e cenoura.
+
+                                        </p>
+
+
+                                        <span
+                                            class="badge text-bg-light">
+
+                                            🍌 Banana
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- QUINTA -->
+
+                            <div class="col-md-6 col-lg">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+
+                                    <div
+                                        class="card-header bg-success text-white text-center">
+
+                                        <strong>
+
+                                            Quinta-feira
+
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="card-body">
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            ☀ Almoço
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz, feijão, escondidinho
+                                            de batata-doce com frango
+                                            desfiado e salada.
+
+                                        </p>
+
+
+                                        <hr>
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            🌙 Jantar
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz, feijão, carne suína,
+                                            purê de abóbora e salada.
+
+                                        </p>
+
+
+                                        <span
+                                            class="badge text-bg-light">
+
+                                            🍍 Abacaxi
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- SEXTA -->
+
+                            <div class="col-md-6 col-lg">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+
+                                    <div
+                                        class="card-header bg-success text-white text-center">
+
+                                        <strong>
+
+                                            Sexta-feira
+
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="card-body">
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            ☀ Almoço
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz, feijão, pernil desfiado
+                                            com molho de inhame e vinagrete.
+
+                                        </p>
+
+
+                                        <hr>
+
+
+                                        <h6
+                                            class="text-warning fw-bold">
+
+                                            🌙 Jantar
+
+                                        </h6>
+
+                                        <p class="text-muted">
+
+                                            Arroz colorido com carne bovina,
+                                            cenoura, feijão e salada.
+
+                                        </p>
+
+
+                                        <span
+                                            class="badge text-bg-light">
+
+                                            🍈 Melão
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         CARDÁPIOS ANTERIORES
+                    ================================== -->
+
+                    <div
+                        class="tab-pane fade"
+                        id="anteriores"
+                        role="tabpanel">
+
+
+                        <div
+                            class="card border-0 shadow-sm rounded-4 mb-4">
+
+                            <div class="card-body p-4">
+
+
+                                <h2 class="h4 fw-bold">
+
+                                    <i
+                                        class="bi bi-archive text-success">
+                                    </i>
+
+                                    Cardápios anteriores
+
+                                </h2>
+
+
+                                <p class="text-muted">
+
+                                    Selecione o mês que deseja consultar.
+
+                                </p>
+
+
+                                <!-- SELEÇÃO -->
+
+                                <div class="row g-3 align-items-end">
+
+
+                                    <div class="col-md-6">
+
+                                        <label
+                                            for="mes"
+                                            class="form-label fw-semibold">
+
+                                            Mês
+
+                                        </label>
+
+
+                                        <select
+                                            id="mes"
+                                            class="form-select">
+
+                                            <option selected>
+
+                                                Selecione o mês
+
+                                            </option>
+
+                                            <option>
+
+                                                Janeiro
+
+                                            </option>
+
+                                            <option>
+
+                                                Fevereiro
+
+                                            </option>
+
+                                            <option>
+
+                                                Março
+
+                                            </option>
+
+                                            <option>
+
+                                                Abril
+
+                                            </option>
+
+                                            <option>
+
+                                                Maio
+
+                                            </option>
+
+                                            <option>
+
+                                                Junho
+
+                                            </option>
+
+                                            <option>
+
+                                                Julho
+
+                                            </option>
+
+                                            <option>
+
+                                                Agosto
+
+                                            </option>
+
+                                            <option>
+
+                                                Setembro
+
+                                            </option>
+
+                                            <option>
+
+                                                Outubro
+
+                                            </option>
+
+                                            <option>
+
+                                                Novembro
+
+                                            </option>
+
+                                            <option>
+
+                                                Dezembro
+
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+
+                                    <div class="col-md-3">
+
+                                        <label
+                                            for="ano"
+                                            class="form-label fw-semibold">
+
+                                            Ano
+
+                                        </label>
+
+
+                                        <select
+                                            id="ano"
+                                            class="form-select">
+
+                                            <option>
+
+                                                2026
+
+                                            </option>
+
+                                            <option>
+
+                                                2025
+
+                                            </option>
+
+                                            <option>
+
+                                                2024
+
+                                            </option>
+
+                                        </select>
+
+                                    </div>
+
+
+                                    <div class="col-md-3">
+
+                                        <button
+                                            id="consultar"
+                                            class="btn btn-success w-100">
+
+                                            <i class="bi bi-search"></i>
+
+                                            Consultar
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ARQUIVOS -->
+
+                        <h3 class="h5 fw-bold mb-3">
+
+                            Cardápios disponíveis
+
+                        </h3>
+
+
+                        <div class="row g-3">
+
+
+                            <!-- OUTUBRO -->
+
+                            <div class="col-md-6 col-lg-4">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+                                    <div
+                                        class="card-body p-4">
+
+
+                                        <div
+                                            class="d-flex align-items-center">
+
+
+                                            <div
+                                                class="bg-success bg-opacity-10 rounded-3 p-3 me-3">
+
+                                                <i
+                                                    class="bi bi-calendar-month text-success fs-3">
+                                                </i>
+
+                                            </div>
+
+
+                                            <div>
+
+                                                <h4 class="h6 fw-bold mb-1">
+
+                                                    Outubro de 2026
+
+                                                </h4>
+
+                                                <small
+                                                    class="text-muted">
+
+                                                    Cardápio mensal
+
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="mt-4">
+
+                                            <button
+                                                class="btn btn-outline-success w-100">
+
+                                                <i
+                                                    class="bi bi-eye">
+                                                </i>
+
+                                                Consultar
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- SETEMBRO -->
+
+                            <div class="col-md-6 col-lg-4">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+                                    <div
+                                        class="card-body p-4">
+
+
+                                        <div
+                                            class="d-flex align-items-center">
+
+
+                                            <div
+                                                class="bg-success bg-opacity-10 rounded-3 p-3 me-3">
+
+                                                <i
+                                                    class="bi bi-calendar-month text-success fs-3">
+                                                </i>
+
+                                            </div>
+
+
+                                            <div>
+
+                                                <h4 class="h6 fw-bold mb-1">
+
+                                                    Setembro de 2026
+
+                                                </h4>
+
+                                                <small
+                                                    class="text-muted">
+
+                                                    Cardápio mensal
+
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="mt-4">
+
+                                            <button
+                                                class="btn btn-outline-success w-100">
+
+                                                <i
+                                                    class="bi bi-eye">
+                                                </i>
+
+                                                Consultar
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- AGOSTO -->
+
+                            <div class="col-md-6 col-lg-4">
+
+                                <div
+                                    class="card border-0 shadow-sm rounded-4 h-100">
+
+                                    <div
+                                        class="card-body p-4">
+
+
+                                        <div
+                                            class="d-flex align-items-center">
+
+
+                                            <div
+                                                class="bg-success bg-opacity-10 rounded-3 p-3 me-3">
+
+                                                <i
+                                                    class="bi bi-calendar-month text-success fs-3">
+                                                </i>
+
+                                            </div>
+
+
+                                            <div>
+
+                                                <h4 class="h6 fw-bold mb-1">
+
+                                                    Agosto de 2026
+
+                                                </h4>
+
+                                                <small
+                                                    class="text-muted">
+
+                                                    Cardápio mensal
+
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="mt-4">
+
+                                            <button
+                                                class="btn btn-outline-success w-100">
+
+                                                <i
+                                                    class="bi bi-eye">
+                                                </i>
+
+                                                Consultar
+
+                                            </button>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             INFORMAÇÃO
+        ====================================== -->
+
+        <section class="pb-5">
+
+            <div class="container">
+
+
+                <div
+                    class="alert alert-success border-0 rounded-4 shadow-sm">
+
+                    <div class="d-flex">
+
+
+                        <i
+                            class="bi bi-info-circle-fill fs-4 me-3">
+                        </i>
+
+
+                        <div>
+
+                            <h2 class="h6 fw-bold">
+
+                                Sobre o cardápio escolar
+
+                            </h2>
+
+
+                            <p class="mb-0">
+
+                                Os cardápios são planejados de acordo
+                                com as necessidades dos estudantes e
+                                as orientações do Programa Nacional de
+                                Alimentação Escolar (PNAE).
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             OPINIÃO
+        ====================================== -->
+
+        <section class="pb-5">
+
+            <div class="container">
+
+
+                <div
+                    class="bg-success text-white rounded-4 p-4 p-md-5">
+
+
+                    <div class="row align-items-center">
+
+
+                        <div class="col-lg-8">
+
+                            <h2 class="fw-bold">
+
+                                Quer dar sua opinião?
+
+                            </h2>
+
+
+                            <p class="mb-0">
+
+                                A participação da comunidade escolar
+                                é importante para melhorar cada refeição.
+
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+
+                            <a
+                                href="login.html"
+                                class="btn btn-light btn-lg">
+
+                                <i
+                                    class="bi bi-chat-left-text">
+                                </i>
+
+                                Enviar opinião
+
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         RODAPÉ
+    ====================================== -->
+
+    <footer
+        class="bg-success text-white text-center py-4">
+
+        <div class="container">
+
+
+            <p class="mb-1">
+
+                Escola Municipal Machado de Assis
+
+            </p>
+
+
+            <small>
+
+                Prefeitura Municipal de Ituiutaba/MG
+
+            </small>
+
+
+            <p class="mt-2 mb-0">
+
+                © 2026 - Todos os direitos reservados.
+
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        document
+            .querySelector("#consultar")
+            .addEventListener("click", function () {
+
+
+                const mes =
+                    document.querySelector("#mes").value;
+
+
+                const ano =
+                    document.querySelector("#ano").value;
+
+
+                if (mes === "Selecione o mês") {
+
+                    alert("Selecione um mês.");
+
+                    return;
+
+                }
+
+
+                alert(
+                    "Consultando o cardápio de "
+                    + mes
+                    + " de "
+                    + ano
+                    + "."
+                );
+
+
+            });
+
+    </script>
+
+
+</body>
+
+</html>
+
+

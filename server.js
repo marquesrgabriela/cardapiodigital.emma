@@ -15,7 +15,7 @@ const db = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'cardapio_escolar',
-    password: '030392',
+    password: ,
     port: 5432
 });
 

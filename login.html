@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -9,27 +8,30 @@
 
     <title>Login - Cardápio Escolar</title>
 
+
     <!-- Bootstrap 5 -->
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
     <!-- Fonte Poppins -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+
     <!-- CSS do site -->
-    <link rel="stylesheet" href="site.css">
+
+    <link rel="stylesheet" href="CSS/site.css">
 
 </head>
 
@@ -37,7 +39,9 @@
 <body class="bg-light">
 
 
-    <!-- CABEÇALHO -->
+    <!-- ========================================
+         CABEÇALHO
+    ========================================= -->
 
     <header class="bg-white shadow-sm py-3">
 
@@ -45,13 +49,12 @@
 
             <div class="d-flex justify-content-between align-items-center">
 
-                <!-- Logo -->
 
-                <a href="index.html"
-                    class="text-decoration-none">
+                <!-- LOGO -->
 
-                    <h2 class="m-0"
-                        style="color: #468C5C; font-weight: 700;">
+                <a href="index.html" class="text-decoration-none">
+
+                    <h2 class="m-0" style="color: #468C5C; font-weight: 700;">
 
                         Cardápio Escolar
 
@@ -60,10 +63,9 @@
                 </a>
 
 
-                <!-- Botão voltar -->
+                <!-- BOTÃO INÍCIO -->
 
-                <a href="index.html"
-                    class="btn btn-outline-success">
+                <a href="index.html" class="btn btn-outline-success">
 
                     <i class="bi bi-house"></i>
 
@@ -79,267 +81,214 @@
 
 
 
-    <!-- LOGIN -->
+    <!-- ========================================
+         CONTEÚDO PRINCIPAL
+    ========================================= -->
 
-    <main class="container py-5">
+    <main>
 
-        <div class="row justify-content-center">
+        <section class="py-5">
 
-            <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+            <div class="container">
 
+                <div class="row justify-content-center">
 
-                <!-- CARD -->
-
-                <div class="card border-0 shadow-sm rounded-4">
-
-                    <div class="card-body p-4 p-md-5">
-
-
-                        <!-- TÍTULO -->
-
-                        <div class="text-center mb-4">
-
-                            <div
-                                class="bg-success bg-opacity-10 rounded-circle d-inline-flex p-3 mb-3">
-
-                                <i
-                                    class="bi bi-person-circle text-success fs-1">
-                                </i>
-
-                            </div>
-
-                            <h1 class="h3 fw-bold">
-
-                                Bem-vindo!
-
-                            </h1>
-
-                            <p class="text-muted">
-
-                                Entre para acompanhar o cardápio e
-                                participar da comunidade escolar.
-
-                            </p>
-
-                        </div>
+                    <div class="col-md-6 col-lg-5">
 
 
+                        <!-- ========================================
+                             CARD DE LOGIN
+                        ========================================= -->
 
-                        <!-- FORMULÁRIO -->
+                        <div class="card border-0 shadow-sm rounded-4">
 
-                        <form id="loginForm">
+                            <div class="card-body p-4 p-md-5">
 
 
-                            <!-- E-MAIL -->
+                                <!-- TÍTULO -->
 
-                            <div class="mb-3">
+                                <div class="text-center mb-4">
 
-                                <label
-                                    for="email"
-                                    class="form-label fw-semibold">
+                                    <i class="bi bi-person-circle text-success" style="font-size: 3rem;">
+                                    </i>
 
-                                    E-mail
 
-                                </label>
+                                    <h1 class="h3 fw-bold mt-3">
 
-                                <div class="input-group">
+                                        Entrar
 
-                                    <span class="input-group-text">
+                                    </h1>
 
-                                        <i class="bi bi-envelope"></i>
 
-                                    </span>
+                                    <p class="text-muted">
 
-                                    <input
-                                        type="email"
-                                        class="form-control"
-                                        id="email"
-                                        placeholder="seuemail@gmail.com"
-                                        required>
+                                        Acesse sua conta
+
+                                    </p>
 
                                 </div>
 
-                            </div>
+
+
+                                <!-- ========================================
+                                     FORMULÁRIO
+                                ========================================= -->
+
+                                <form id="loginForm" novalidate>
+
+
+                                    <!-- E-MAIL -->
+
+                                    <div class="mb-3">
+
+                                        <label for="email" class="form-label fw-semibold">
+
+                                            E-mail
+
+                                        </label>
+
+
+                                        <input type="email" class="form-control form-control-lg" id="email"
+                                            placeholder="Digite seu e-mail" required>
+
+
+                                        <div class="invalid-feedback">
+
+                                            Digite um e-mail válido.
+
+                                        </div>
+
+                                    </div>
 
 
 
-                            <!-- SENHA -->
+                                    <!-- SENHA -->
 
-                            <div class="mb-3">
+                                    <div class="mb-3">
 
-                                <label
-                                    for="senha"
-                                    class="form-label fw-semibold">
+                                        <label for="senha" class="form-label fw-semibold">
 
-                                    Senha
+                                            Senha
 
-                                </label>
+                                        </label>
 
-                                <div class="input-group">
 
-                                    <span class="input-group-text">
+                                        <div class="input-group">
 
-                                        <i class="bi bi-lock"></i>
+                                            <input type="password" class="form-control form-control-lg" id="senha"
+                                                placeholder="Digite sua senha" required>
+
+
+                                            <button type="button" class="btn btn-outline-secondary" id="mostrarSenha"
+                                                title="Mostrar senha">
+
+                                                <i class="bi bi-eye"></i>
+
+                                            </button>
+
+                                        </div>
+
+
+                                        <div class="invalid-feedback">
+
+                                            Digite sua senha.
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                    <!-- BOTÃO ENTRAR -->
+
+                                    <div class="d-grid mt-4">
+
+                                        <button type="submit" class="btn btn-success btn-lg">
+
+                                            <i class="bi bi-box-arrow-in-right">
+                                            </i>
+
+                                            Entrar
+
+                                        </button>
+
+                                    </div>
+
+
+                                </form>
+
+
+
+                                <!-- ========================================
+                                     DIVISOR
+                                ========================================= -->
+
+                                <div class="text-center my-4">
+
+                                    <span class="text-muted">
+
+                                        ou
 
                                     </span>
 
-                                    <input
-                                        type="password"
-                                        class="form-control"
-                                        id="senha"
-                                        placeholder="Digite sua senha"
-                                        required>
+                                </div>
 
-                                    <button
-                                        class="btn btn-outline-secondary"
-                                        type="button"
-                                        id="mostrarSenha">
 
-                                        <i class="bi bi-eye"></i>
+
+                                <!-- ========================================
+                                     LOGIN GOOGLE
+                                ========================================= -->
+
+                                <div class="d-grid">
+
+                                    <button type="button" class="btn btn-outline-dark btn-lg" id="loginGoogle">
+
+                                        <i class="bi bi-google"></i>
+
+                                        Entrar com Google
 
                                     </button>
 
                                 </div>
 
-                            </div>
 
 
+                                <!-- ========================================
+                                     CADASTRO
+                                ========================================= -->
 
-                            <!-- LEMBRAR / ESQUECI -->
+                                <p class="text-center text-muted mt-4 mb-0">
 
-                            <div
-                                class="d-flex justify-content-between align-items-center mb-4">
+                                    Ainda não possui uma conta?
 
-                                <div class="form-check">
+                                    <a href="cadastro.html" class="text-success fw-semibold">
 
-                                    <input
-                                        class="form-check-input"
-                                        type="checkbox"
-                                        id="lembrar">
+                                        Cadastre-se
 
-                                    <label
-                                        class="form-check-label"
-                                        for="lembrar">
+                                    </a>
 
-                                        Lembrar de mim
+                                </p>
 
-                                    </label>
-
-                                </div>
-
-
-                                <a
-                                    href="#"
-                                    class="text-success text-decoration-none">
-
-                                    Esqueci minha senha
-
-                                </a>
 
                             </div>
 
-
-
-                            <!-- BOTÃO ENTRAR -->
-
-                            <div class="d-grid">
-
-                                <button
-                                    type="submit"
-                                    class="btn btn-success btn-lg">
-
-                                    <i class="bi bi-box-arrow-in-right"></i>
-
-                                    Entrar
-
-                                </button>
-
-                            </div>
-
-
-
-                            <!-- DIVISOR -->
-
-                            <div class="d-flex align-items-center my-4">
-
-                                <hr class="flex-grow-1">
-
-                                <span class="mx-3 text-muted">
-
-                                    ou
-
-                                </span>
-
-                                <hr class="flex-grow-1">
-
-                            </div>
-
-
-
-                            <!-- GOOGLE -->
-
-                            <div class="d-grid">
-
-                                <button
-                                    type="button"
-                                    class="btn btn-outline-dark btn-lg"
-                                    id="loginGoogle">
-
-                                    <i class="bi bi-google me-2"></i>
-
-                                    Continuar com Google
-
-                                </button>
-
-                            </div>
-
-
-
-                            <!-- CADASTRO -->
-
-                            <p class="text-center text-muted mt-4 mb-0">
-
-                                Ainda não possui uma conta?
-
-                                <a
-                                    href="cadastro.html"
-                                    class="text-success fw-semibold text-decoration-none">
-
-                                    Cadastre-se
-
-                                </a>
-
-                            </p>
-
-                        </form>
+                        </div>
 
                     </div>
 
                 </div>
 
-
-                <!-- INFORMAÇÃO -->
-
-                <div class="text-center mt-4">
-
-                    <small class="text-muted">
-
-                        Ao entrar, você poderá participar da comunidade
-                        e enviar comentários sobre a alimentação escolar.
-
-                    </small>
-
-                </div>
-
             </div>
 
-        </div>
+        </section>
 
     </main>
 
 
 
-    <!-- RODAPÉ -->
+    <!-- ========================================
+         RODAPÉ
+    ========================================= -->
 
     <footer class="bg-success text-white text-center py-4">
 
@@ -351,11 +300,19 @@
 
             </p>
 
+
             <small>
 
                 Prefeitura Municipal de Ituiutaba/MG
 
             </small>
+
+
+            <p class="mt-2 mb-0">
+
+                © 2026 - Todos os direitos reservados.
+
+            </p>
 
         </div>
 
@@ -363,116 +320,294 @@
 
 
 
-    <!-- JAVASCRIPT -->
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
 
     <script>
 
-        // Mostrar e esconder senha
-
-        const mostrarSenha =
-            document.querySelector("#mostrarSenha");
-
-        const senha =
-            document.querySelector("#senha");
-
-
-        mostrarSenha.addEventListener("click", function () {
-
-            if (senha.type === "password") {
-
-                senha.type = "text";
-
-                this.innerHTML =
-                    '<i class="bi bi-eye-slash"></i>';
-
-            } else {
-
-                senha.type = "password";
-
-                this.innerHTML =
-                    '<i class="bi bi-eye"></i>';
-
-            }
-
-        });
-
-
-
-        // Login
+        /* ========================================
+           FORMULÁRIO DE LOGIN
+        ========================================= */
 
         const loginForm =
             document.querySelector("#loginForm");
 
 
-        loginForm.addEventListener("submit", function (event) {
+        loginForm.addEventListener(
+            "submit",
+            async function (evento) {
 
-            event.preventDefault();
-
-
-            const email =
-                document.querySelector("#email").value;
-
-            const senhaValor =
-                document.querySelector("#senha").value;
+                evento.preventDefault();
 
 
-            if (email === "" || senhaValor === "") {
+                /* ========================================
+                   VALIDAÇÃO
+                ========================================= */
 
-                alert("Preencha todos os campos.");
+                if (!loginForm.checkValidity()) {
 
-                return;
+                    loginForm.classList.add(
+                        "was-validated"
+                    );
+
+                    return;
+
+                }
+
+
+                /* ========================================
+                   PEGAR DADOS
+                ========================================= */
+
+                const email =
+                    document.querySelector("#email").value.trim();
+
+
+                const senha =
+                    document.querySelector("#senha").value;
+
+
+
+                try {
+
+
+                    /* ========================================
+                       ENVIAR PARA O BACKEND
+                    ======================================== */
+
+                    const resposta =
+                        await fetch("/login", {
+
+                            method: "POST",
+
+                            headers: {
+
+                                "Content-Type":
+                                    "application/json"
+
+                            },
+
+                            body: JSON.stringify({
+
+                                email: email,
+
+                                senha: senha
+
+                            })
+
+                        });
+
+
+
+                    const resultado =
+                        await resposta.json();
+
+
+
+                    /* ========================================
+                       VERIFICAR LOGIN
+                    ======================================== */
+
+                    if (!resposta.ok) {
+
+                        alert(
+                            resultado.mensagem ||
+                            "E-mail ou senha incorretos."
+                        );
+
+                        return;
+
+                    }
+
+
+
+                    /* ========================================
+                       DADOS DO USUÁRIO
+                    ======================================== */
+
+                    const usuario =
+                        resultado.usuario;
+
+
+
+                    /* ========================================
+                       SALVAR LOGIN NO NAVEGADOR
+                    ======================================== */
+
+                    localStorage.setItem(
+                        "usuarioLogado",
+                        "true"
+                    );
+
+
+                    /*
+                       ID DO USUÁRIO
+
+                       Esse dado será utilizado posteriormente
+                       para salvar os comentários no banco.
+                    */
+
+                    localStorage.setItem(
+                        "usuarioId",
+                        usuario.id_usuario
+                    );
+
+
+                    localStorage.setItem(
+                        "usuarioEmail",
+                        usuario.email
+                    );
+
+
+                    localStorage.setItem(
+                        "usuarioNome",
+                        usuario.nome
+                    );
+
+
+
+                    /* ========================================
+                       CONSOLE
+                    ======================================== */
+
+                    console.log(
+                        "Login realizado com sucesso."
+                    );
+
+
+                    console.log(
+                        "ID do usuário:",
+                        usuario.id_usuario
+                    );
+
+
+                    console.log(
+                        "Nome do usuário:",
+                        usuario.nome
+                    );
+
+
+                    console.log(
+                        "E-mail do usuário:",
+                        usuario.email
+                    );
+
+
+
+                    /* ========================================
+                       MENSAGEM DE SUCESSO
+                    ======================================== */
+
+                    alert(
+                        `Login realizado com sucesso! Bem-vindo, ${usuario.nome}.`
+                    );
+
+
+
+                    /* ========================================
+                       REDIRECIONAR
+                    ======================================== */
+
+                    window.location.href =
+                        "index.html";
+
+
+                } catch (erro) {
+
+                    console.error(
+                        "Erro ao realizar login:",
+                        erro
+                    );
+
+
+                    alert(
+                        "Não foi possível realizar o login. Verifique se o servidor está funcionando."
+                    );
+
+                }
 
             }
-
-
-            /*
-                Simulação de login.
-
-                Em uma aplicação real,
-                os dados seriam enviados
-                para um servidor.
-            */
-
-            localStorage.setItem(
-                "usuarioLogado",
-                "true"
-            );
-
-
-            localStorage.setItem(
-                "usuarioEmail",
-                email
-            );
-
-
-            alert("Login realizado com sucesso!");
-
-
-            window.location.href = "index.html";
-
-        });
+        );
 
 
 
-        // Botão Google
+        /* ========================================
+           MOSTRAR / OCULTAR SENHA
+        ========================================= */
 
-        document.querySelector("#loginGoogle")
-            .addEventListener("click", function () {
+        const mostrarSenha =
+            document.querySelector("#mostrarSenha");
+
+
+        const campoSenha =
+            document.querySelector("#senha");
+
+
+        mostrarSenha.addEventListener(
+            "click",
+            function () {
+
+                if (
+                    campoSenha.type === "password"
+                ) {
+
+                    campoSenha.type = "text";
+
+
+                    mostrarSenha.innerHTML =
+                        '<i class="bi bi-eye-slash"></i>';
+
+                    mostrarSenha.title =
+                        "Ocultar senha";
+
+                } else {
+
+                    campoSenha.type =
+                        "password";
+
+
+                    mostrarSenha.innerHTML =
+                        '<i class="bi bi-eye"></i>';
+
+                    mostrarSenha.title =
+                        "Mostrar senha";
+
+                }
+
+            }
+        );
+
+
+
+        /* ========================================
+           LOGIN COM GOOGLE
+        ========================================= */
+
+        const loginGoogle =
+            document.querySelector("#loginGoogle");
+
+
+        loginGoogle.addEventListener(
+            "click",
+            function () {
 
                 alert(
-                    "O login com Google será configurado posteriormente."
+                    "O login com Google será implementado posteriormente."
                 );
 
-            });
+            }
+        );
 
     </script>
+
 
 
     <!-- Bootstrap JavaScript -->
 
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
+
 
 </body>
 
